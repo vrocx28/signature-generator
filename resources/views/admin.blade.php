@@ -13,7 +13,7 @@
                         <form action="{{ route('admin-post') }}" method="POST">
                             @csrf
                             <div class="form-group row">
-                                <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                                <label for="email_address" class="col-md-4 col-form-label text-md-right">Username</label>
                                 <div class="col-md-6">
                                     <input type="text" id="name" class="form-control" name="name" required autofocus>
                                     @if ($errors->has('email'))
