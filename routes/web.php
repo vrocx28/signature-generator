@@ -16,5 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/signature','SignatureController@signature')->name('signature');
-Route::post('/data-post','SignatureController@signaturePost')->name('data-post');
+Route::get('/admin', 'SignatureController@admin')->name('admin');
+Route::post('/admin-post', 'SignatureController@adminPost')->name('admin-post');
+Route::group(['prefix' => '/', 'middleware' => 'admin'], function () {
+    Route::get('/signature', 'SignatureController@signature')->name('signature');
+    Route::post('/data-post', 'SignatureController@signaturePost')->name('data-post');
+    Route::get('/logout', 'SignatureController@logout')->name('logout');
+});
