@@ -20,6 +20,10 @@ body {
     font-family: Raleway, sans-serif;
 }
 
+.navbar-collapse {
+    text-align: right;
+}
+
 .main h3 {
     text-align: center;
     padding: 20px 0px 20px 0px;
