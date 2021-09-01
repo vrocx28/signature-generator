@@ -1,16 +1,22 @@
-@extends('adminlayout')
+<!DOCTYPE html>
+@extends('layout')
 @section('content')
 <main class="login-form">
     <div class="cotainer">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">Login</div>
                     <div class="card-body">
                         @if($errors->any())
-                            <h5>{{$errors->first()}}</h5>
+                        <h5>{{$errors->first()}}</h5>
                         @endif
-                        <form action="{{ route('admin-post') }}" method="POST">
+                        @if (Session::has('message'))
+                        <div class="alert alert-success" role="alert">
+                            {{ Session::get('message') }}
+                        </div>
+                        @endif
+                        <form action="{{ route('login-post') }}" method="POST">
                             @csrf
                             <div class="form-group row">
                                 <label for="email_address" class="col-md-4 col-form-label text-md-right">Username</label>
@@ -34,9 +40,9 @@
 
                             <div class="form-group row">
                                 <div class="col-md-6 offset-md-4">
-                                    <div class="checkbox">
+                                    <div class="link">
                                         <label>
-                                            <input type="checkbox" name="remember"> Remember Me
+                                            <a class="nav-link" href="{{ url('forget-password') }}">Forgotten password?</a>
                                         </label>
                                     </div>
                                 </div>

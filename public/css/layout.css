@@ -29,6 +29,14 @@ body {
     padding: 20px 0px 20px 0px;
 }
 
+.container {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .main .input-side input {
     margin-top: 20px;
 }
@@ -38,15 +46,18 @@ body {
     padding: 20px 0px 20px 0px;
 }
 
+.error {
+    color: red;
+}
+
 .submit {
-    margin: 20px 0;
+    margin: 15px auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.main h5 {
-    text-align: center;
-}
-
-.main form {
+.main heading {
     text-align: center;
 }
 
