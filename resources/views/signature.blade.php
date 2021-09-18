@@ -17,25 +17,25 @@
                <div class="row g-3">
 
                   <div class="col-lg-6 col-md-12">
-                     <input type="text" class="form-control" name="inputFname" placeholder="First Name*" required autofocus value="vaibhav">
+                     <input type="text" class="form-control" name="inputFname" placeholder="First Name*" required autofocus>
                   </div>
                   <div class="col-lg-6 col-md-12">
-                     <input type="text" class="form-control" name="inputLname" placeholder="Last Name*" required autofocus value="bansal">
+                     <input type="text" class="form-control" name="inputLname" placeholder="Last Name*" required autofocus>
                   </div>
                   <div class="col-lg-12 col-md-12">
-                     <input type="text" class="form-control" name="inputJobPosition" placeholder="Job-Position*" required autofocus value="junior dev">
+                     <input type="text" class="form-control" name="inputJobPosition" placeholder="Job-Position*" required autofocus>
                   </div>
                   <div class="col-lg-12 col-md-12">
                      <input type="file" class="form-control" name="inputLogopic" accept="image/*" >
                   </div>
                   <div class="col-lg-6 col-md-12">
-                     <input type="tel" class="form-control" name="inputPhone" placeholder="Phone No." value="0123456789">
+                     <input type="tel" class="form-control" name="inputPhone" placeholder="Phone No.">
                   </div>
                   <div class="col-lg-6 col-md-12">
-                     <input type="tel" class="form-control" name="inputMobile" placeholder="Mobile No." value="0123456789">
+                     <input type="tel" class="form-control" name="inputMobile" placeholder="Mobile No.">
                   </div>
                   <div class="col-lg-12 col-md-12">
-                     <input type="email" class="form-control" name="inputEmail" placeholder="Email*" required autofocus value="vaibhavbansal@gmail.com"> 
+                     <input type="email" class="form-control" name="inputEmail" placeholder="Email*" required autofocus> 
                   </div>
 
                </div>
